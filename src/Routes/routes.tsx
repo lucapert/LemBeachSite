@@ -10,10 +10,10 @@ const routes = () =>
         <BrowserRouter>
             <div>
                 <Switch>
-                    <Route path="/create">
+                    <Route exact path="/create">
                         <Page2 />
                     </Route>
-                    <Route path="/">
+                    <Route exact path="/">
                         <Page1 />
                     </Route>
                 </Switch>
