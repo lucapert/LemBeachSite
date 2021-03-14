@@ -1,7 +1,11 @@
 {
-  "name": "learn-starter",
+  "name": "lem-beach-site",
+  "description":"sito l'uomo e il mare",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "10.17.0"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
