@@ -2,6 +2,9 @@ import Head from 'next/head';
 import Styles from '../pages/index.module.scss';
 import Test from '../src/components/index/text/Text';
 export default function Home() {
+  // questa è la pagina dove abbiamo l'intero documento renderizzato
+  // viene eseguita solamente lato server
+  // console.log('I Am document page');
   return (
     <div className={Styles.container}>
       <Head>
