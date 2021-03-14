@@ -1,4 +1,4 @@
-import Head from 'next/Head';
+import Head from 'next/head';
 
 import Styles from '../pages/index.module.scss';
 import Test from '../src/components/index/text/Text';
