@@ -1,6 +1,11 @@
+import {useEffect} from 'react';
 function Test()
 {
-    console.log('I am test component');
+    useEffect(() => {
+        alert('hello')
+    });
+    // eseguito lato client
+    // console.log('I am test component');
     return (
         <h1>test</h1>
     );
