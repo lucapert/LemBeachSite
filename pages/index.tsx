@@ -1,10 +1,38 @@
-import Head from 'next/head';
+/* 
+Next è un React frontend development web framework creati da vercel
+che abilita funzionalità come rendering serverside e generazione di siti 
+statici (va generata la folder out/ dove avremo tutti i file statici).
 
-import Styles from '../pages/index.module.scss';
+A differenza di React che viene reso solo lato client, Next.js consente
+la prima pagina di essere caricata da server, che è buono per SEO e performance.
+
+COn Next abbiamo un routing semplice
+API Routes
+Typescript e Sass/Scss
+static site generation
+Facile deployment
+*/
+
+/*
+la folder public è quella dove vanno i file statici
+infatti es. http://localhost:3000/favicon.ico vediamo l'icona
+*/
+/*
+  il routing è molto semplice ed è dato dalla struttura delle folder e file esclusa estensione 
+  sotto la cartella pages/
+*/
+/*
+convezione lower case per le pagine e uppercase per gli altri compenti
+*/
+import Head from 'next/head'; // utilizzato se si vuole un titolo custom 
+// meta tags ecc...
+import Styles from '../styles/Layout.module.scss';
 import Test from '../src/components/index/text/Text';
 export default function Home() {
   // questa è la pagina dove abbiamo l'intero documento renderizzato
   // viene eseguita solamente lato server
+  // ottimo per il SEO in quanto quelle lato client non ne vediamo il codice sorgente
+  // invece essendo eseguita lato server abbiamo tutto il contenuto DOM renderizzato
   // console.log('I Am document page');
   // forma l'intera struttura della pagina
   // compreso script ecc..
@@ -12,64 +40,13 @@ export default function Home() {
   // quindi component didmount/useeffect ecc.. non vengono eseguiti
   return (
       <div className={Styles.container}>
-        <Head>
-          <title>Test App</title>
-          <link rel="icon" href="/favicon.ico" />
-          <meta name='description' content="A page's description, usually one or two sentences"></meta>
-        </Head>
-
-        <main>
-          <h1 className={Styles.title}>
-            to <a href="https://nextjs.org">Next.js!</a>
-          </h1>
-
-          <Test></Test>
-
-          <p className={Styles.description}>
-            Get started by editing <code>pages/index.js</code>
-          </p>
-
-          <div className={Styles.grid}>
-            <a href="https://nextjs.org/docs" className={Styles.card}>
-              <h3>Documentation &rarr;</h3>
-              <p>Find in-depth information about Next.js features and API.</p>
-            </a>
-
-            <a href="https://nextjs.org/learn" className={Styles.card}>
-              <h3>Learn &rarr;</h3>
-              <p>Learn about Next.js in an interactive course with quizzes!</p>
-            </a>
-
-            <a
-              href="https://github.com/vercel/next.js/tree/master/examples"
-              className={Styles.card}
-            >
-              <h3>Examples &rarr;</h3>
-              <p>Discover and deploy boilerplate example Next.js projects.</p>
-            </a>
-
-            <a
-              href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              className={Styles.card}
-            >
-              <h3>Deploy &rarr;</h3>
-              <p>
-                Instantly deploy your Next.js site to a public URL with Vercel.
-              </p>
-            </a>
-          </div>
-        </main>
-
-        <footer>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Powered by{' '}
-            <img src="/images/vercel.svg" alt="Vercel Logo" className={Styles.logo} />
-          </a>
-        </footer>
-      </div>  
+        <div>
+          <Head>
+            <title>WebDev Newz</title>
+            <meta name='keywords' content='web, development, programming'/>
+          </Head>
+          <h1>Welcome to react page</h1>
+        </div>
+      </div>
   )
 }
