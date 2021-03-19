@@ -24,11 +24,14 @@ infatti es. http://localhost:3000/favicon.ico vediamo l'icona
 /*
 convezione lower case per le pagine e uppercase per gli altri compenti
 */
-import Head from 'next/head'; // utilizzato se si vuole un titolo custom 
+// import Head from 'next/head'; // utilizzato se si vuole un titolo custom 
 // meta tags ecc...
 import Styles from '../styles/Layout.module.scss';
 import Test from '../src/components/index/text/Text';
-export default function Home() {
+import ArticleList from '../src/components/index/text/ArticleList/ArticleList';
+import { server } from '../config/index'
+export default function Home({ articles }) {
+  console.log(articles);
   // questa è la pagina dove abbiamo l'intero documento renderizzato
   // viene eseguita solamente lato server
   // ottimo per il SEO in quanto quelle lato client non ne vediamo il codice sorgente
@@ -41,12 +44,40 @@ export default function Home() {
   return (
       <div className={Styles.container}>
         <div>
-          <Head>
+          {/* <Head>
             <title>WebDev Newz</title>
             <meta name='keywords' content='web, development, programming'/>
-          </Head>
-          <h1>Welcome to react page</h1>
+          </Head> */}
+          { /*passiamo le props top down */}
+          <ArticleList articles={ articles }/>
         </div>
       </div>
   )
 }
+
+// facciamo la rquest alla api che abbiamo creato
+export const getStaticProps = async () => {
+  const res = await fetch('${server}/api/articles');
+  const articles = await res.json();
+  // ritorniamo come props gli article che abbiamo ottenuto
+  return {
+    props: {
+      articles
+    }
+  }
+}
+
+// questa funzione, è uno dei tre metodi che ci permettono di fare il fetch dei dati e di passarli
+// come props
+// utilizziamo async e await al suo interno
+// ci permette di ottenere i dati a tempo di build
+// export const getStaticProps = async () => {
+//   const res = await fetch('https://jsonplaceholder.typicode.com/posts?_limit=6');
+//   const articles = await res.json();
+//   // ritorniamo come props gli article che abbiamo ottenuto
+//   return {
+//     props: {
+//       articles
+//     }
+//   }
+// }
