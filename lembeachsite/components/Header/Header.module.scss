@@ -14,22 +14,26 @@
         .infoIcon {
             vertical-align: sub;
         }
-        .social {
-            padding: 3px;
-            cursor: pointer;
-            font-size: 20px;
-            &:hover {
-                color: #FF9900;
-            }
-            .instagram {
-                vertical-align: top;
-                top: 2px;
-                position: relative;
-            }
-            .twitter {
-                vertical-align: top;
-                top: 2px;
-                position: relative;
+        .socials {
+            position: relative;
+            top: -2px;
+            .social {
+                padding: 3px;
+                cursor: pointer;
+                font-size: 20px;
+                &:hover {
+                    color: #FF9900;
+                }
+                .instagram {
+                    vertical-align: top;
+                    top: 2px;
+                    position: relative;
+                }
+                .twitter {
+                    vertical-align: top;
+                    top: 2px;
+                    position: relative;
+                }
             }
         }
     }

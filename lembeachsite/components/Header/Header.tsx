@@ -11,7 +11,7 @@ const Header = () => {
                                 markunread
                             </span> info@lem@gmail.com
                         </div>
-                        <div>
+                        <div className={Styles.socials}>
                             Resta aggiornato, seguici sui nostri social:&nbsp;&nbsp;
                             <a href="https://www.facebook.it" className={Styles.social}>
                                 <span className="material-icons-outlined">
