@@ -10,6 +10,7 @@ const Meta = ({ title, keywords, description }) => {
             <link rel='icon' href='/favicon.ico' />
             <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet" />
             <link rel="stylesheet" type="text/css" href="/vendors/css/ionicons.min.css" />
+            <link rel="stylesheet" type="text/css" href="/vendors/css/grid.css" />
             <title>{title}</title>
         </Head>
     );
