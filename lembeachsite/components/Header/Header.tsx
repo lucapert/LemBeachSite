@@ -18,19 +18,19 @@ const Header = () => {
                             </div>
                         </div>
                         <div>
-                            <a className={Styles.flagIco}>
+                            <a href="#" className={Styles.flagIco}>
                                 <img src="/vendors/flags/iconfinder_italy_325967.png"></img>
                             </a>
-                            <a className={Styles.flagIco}>
+                            <a href="#" className={Styles.flagIco}>
                                 <img src="/vendors/flags/iconfinder_United_Kingdom_2361499.png" className={Styles.icoEng}></img>
                             </a>
-                            <a className={Styles.flagIco}>
+                            <a href="#" className={Styles.flagIco}>
                                 <img src="/vendors/flags/iconfinder_germany_325973.png"></img>
                             </a>
-                            <a className={Styles.flagIco}>
+                            <a href="#" className={Styles.flagIco}>
                                 <img src="/vendors/flags/iconfinder_france_325972.png"></img>
                             </a>
-                            <a className={Styles.flagIco}>
+                            <a href="#" className={Styles.flagIco}>
                                 <img src="/vendors/flags/iconfinder_Untitled-2-05_3253482.png"></img>
                             </a>
                         </div>
