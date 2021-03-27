@@ -1,24 +1,34 @@
 import Styles from './Header.module.scss';
-// in questo componente vediamo anche come inserire lo style
-// all'interno della pagina
+import Nav from '../Nav/Nav';
 const Header = () => {
-    const x = 5;
     return (
         <div>
-            <h1>
-                <span className="title">
-                    WebDev
-                </span> News
-            </h1>
-            <p className={ Styles.description }>Keep up to date with the latest web dev news</p>
-            <style jsx>
-                {
-                    `.title {
-                        color: ${ x > 3 ? 'red' : 'blue' }
-                    }
-                    `
-                }
-            </style>
+            <div className={Styles.mainHeader}>
+                <div className="outerContainer">
+                    <div className={Styles.mainHeader_inner}>
+                        <div>
+                            <span className={Styles.infoIcon+" material-icons-outlined"}>
+                                markunread
+                            </span> info@lem@gmail.com
+                        </div>
+                        <div>
+                            Resta aggiornato, seguici sui nostri social:&nbsp;&nbsp;
+                            <a href="https://www.facebook.it" className={Styles.social}>
+                                <span className="material-icons-outlined">
+                                    facebook
+                                </span>
+                            </a>
+                            <a href="https://www.twitter.it" className={Styles.social}>
+                                <span className={Styles.twitter+" ion-social-twitter-outline"}></span>
+                            </a>
+                            <a href="https://www.instagram.it" className={Styles.social}>
+                                <span className={Styles.instagram+" ion-social-instagram-outline"}></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <Nav />
         </div>
     )
 }

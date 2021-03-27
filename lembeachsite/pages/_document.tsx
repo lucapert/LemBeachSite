@@ -12,10 +12,7 @@ class MyDocument extends Document {
         <Head />
         <body>
           <Main />
-          <footer>
-              
-          </footer>
-          <NextScript />{/* qui vengono renderizzati gli script */}
+          <NextScript />
         </body>
       </Html>
     )

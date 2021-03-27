@@ -8,6 +8,8 @@ const Meta = ({ title, keywords, description }) => {
             <meta name='description' content={description} />
             <meta charSet='utf-8' />
             <link rel='icon' href='/favicon.ico' />
+            <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet" />
+            <link rel="stylesheet" type="text/css" href="/vendors/css/ionicons.min.css" />
             <title>{title}</title>
         </Head>
     );
