@@ -6,10 +6,16 @@ const Header = () => {
             <div className={Styles.mainHeader}>
                 <div className="outerContainer">
                     <div className={Styles.mainHeader_inner}>
-                        <div>
-                            <span className={Styles.infoIcon+" material-icons-outlined"}>
-                                markunread
-                            </span> info@lem@gmail.com
+                        <div className={Styles.contacts}>
+                            <div className={Styles.contactsEmail}>
+                                <span className={Styles.infoIcon+" material-icons-outlined"}>
+                                    markunread
+                                </span> info@lem@gmail.com
+                            </div>
+                            <div>
+                                <span className={Styles.telephoneIco + " ion-ios-telephone"}></span>
+                                0721-111111
+                            </div>
                         </div>
                         <div className={Styles.socials}>
                             Resta aggiornato, seguici sui nostri social:&nbsp;&nbsp;

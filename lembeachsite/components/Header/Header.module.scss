@@ -6,13 +6,24 @@
     justify-content: center;
     align-items: center;
     color: #ffffff;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid #f90;
     .mainHeader_inner
     {
         display: flex;
         justify-content: space-between;
         .infoIcon {
             vertical-align: sub;
+        }
+        .contacts {
+            display: flex;
+            .contactsEmail {
+                margin-right: 20px;
+            }
+            .telephoneIco {
+                font-size: 20px;
+                margin-right: 5px;
+                vertical-align: middle;
+            }
         }
         .socials {
             position: relative;
