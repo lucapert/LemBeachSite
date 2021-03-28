@@ -5,7 +5,7 @@ const Footer = () => {
         <div className={Style.footerContainer}>
             <div className={"outerContainer"}>
                 <span className={Style.copyRight}>
-                <span className="material-icons-outlined">
+                <span className={Style.copyRightIco+" material-icons-outlined"}>
                     copyright
                 </span> l'uomo e il mare { new Date().getFullYear() }
                 </span>

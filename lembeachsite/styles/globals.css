@@ -29,6 +29,7 @@ a {
   color: inherit;
   text-decoration: none;
   cursor: pointer;
+  color: inherit!important;
 }
 
 ul {
@@ -80,4 +81,9 @@ ul {
   direction: ltr;
   -webkit-font-smoothing: antialiased;
   vertical-align: bottom;
+}
+
+/*bootstrap*/
+.carousel-inner img {
+  max-height: 350px;
 }
