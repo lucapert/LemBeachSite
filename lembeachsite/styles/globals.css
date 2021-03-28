@@ -96,3 +96,8 @@ ul {
 ol.carousel-indicators {
   display: none;
 }
+
+#bootstrap-overrides a {
+  text-decoration: none;
+  color: #ffffff;
+}

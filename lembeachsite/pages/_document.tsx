@@ -10,7 +10,7 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head />
-        <body>
+        <body id="bootstrap-overrides">
           <Main />
           <NextScript />
         </body>
