@@ -1,14 +1,34 @@
 import Link from 'next/link';
 import Styles from './Nav.module.scss';
 import { server } from '../../config/config';
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/router';
+import { useEffect } from 'react';
 const Nav = () => {
     const router = useRouter()
     const showChilds = (target) => {
         
     }
+    useEffect(() => {
+        // When the user scrolls the page, execute myFunction
+        window.document.body.onscroll = function() {myFunction()};
+
+        // Get the header
+        var header = window.document.getElementById("nav-bar");
+
+        // Get the offset position of the navbar
+        var sticky = header.offsetTop;
+
+        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+        if (window.pageYOffset > sticky) {
+            header.classList.add("sticky");
+        } else {
+            header.classList.remove("sticky");
+        }
+        }
+    }, []);
     return (
-        <nav className={Styles.nav}>
+        <nav id="nav-bar" className={Styles.nav}>
             <div className="row outerContainer">
                 <div className="col span-1-of-3">
                     
