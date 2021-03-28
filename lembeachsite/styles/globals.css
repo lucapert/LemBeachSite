@@ -84,5 +84,6 @@ ul {
 
 /*bootstrap*/
 .carousel-inner img {
-  max-height: 350px;
+  max-height: 600px;
+  background-size: cover;
 }

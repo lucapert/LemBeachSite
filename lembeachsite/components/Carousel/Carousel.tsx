@@ -7,7 +7,7 @@ const CarouselReactB = () => {
             <Carousel.Item>
                 <img
                 className="d-block w-100"
-                src="/vendors/images/maldive.jpg"
+                src="/vendors/images/ws1.jpg"
                 alt="First slide"
                 />
                 <Carousel.Caption>
@@ -18,7 +18,7 @@ const CarouselReactB = () => {
             <Carousel.Item>
                 <img
                 className="d-block w-100"
-                src="/vendors/images/mare1.jpg"
+                src="/vendors/images/ws2.jpg"
                 alt="Second slide"
                 />
 
@@ -30,7 +30,7 @@ const CarouselReactB = () => {
             <Carousel.Item>
                 <img
                 className="d-block w-100"
-                src="/vendors/images/mare.jpg"
+                src="/vendors/images/ws3.jpg"
                 alt="Third slide"
                 />
 
