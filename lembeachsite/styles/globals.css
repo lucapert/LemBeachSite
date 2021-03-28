@@ -87,3 +87,12 @@ ul {
   max-height: 600px;
   background-size: cover;
 }
+
+.carousel-caption {
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+ol.carousel-indicators {
+  display: none;
+}
