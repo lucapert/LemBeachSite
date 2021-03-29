@@ -1,4 +1,4 @@
-import styles from './Card.module.scss';
+import Styles from './Card.module.scss';
 import * as React from 'react';
 
 export interface ICardProps {
@@ -10,10 +10,11 @@ export interface ICardProps {
 
 var Card =  (props:ICardProps) => {
   return (
-    <div className={ styles.card }>
-        <div className={ styles.innerCard }>
-          <a href={ props.LinkUrl } className={ styles.linkContainer }>
-            <img className={ styles.img } src={ props.ImgUrl } ></img>
+    <div className={ Styles.card }>
+        <div className={ Styles.innerCard }>
+          <a href={ props.LinkUrl } className={ Styles.linkContainer }>
+            <img className={ Styles.img } src={ props.ImgUrl } ></img>
+            <h1 className={ Styles.cardTitle }>{ props.Title }</h1>
           </a>
         </div>
       </div>

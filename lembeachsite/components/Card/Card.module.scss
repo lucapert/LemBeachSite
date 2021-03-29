@@ -2,6 +2,7 @@
   height: 100%;
   max-width: 33%;
   padding: 10px;
+  position: relative;
   h2 {
     margin-top: 0px;
   }
@@ -30,14 +31,33 @@
     border: none;
     overflow: hidden;
     display: block;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    .cardTitle {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        z-index: 9;
+        margin-right: 45px;
+        margin-left: 45px;
+        transition: opacity 0.8s;
+        opacity: 1;
+    }
   }
   .linkContainer:hover .img {
     transform: scale(1.1);
+    opacity: 1;
+  }
+  .linkContainer:hover .cardTitle {
+    opacity: 0;
   }
   .img {
-    transition: all 0.3s;
+    transition: all 0.8s;
     height: 260px;
-    width: 100.5%;
+    width: 100%;
+    opacity: 0.6;
   }
 }
 
