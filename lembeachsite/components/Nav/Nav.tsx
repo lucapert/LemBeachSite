@@ -29,11 +29,11 @@ const Nav = () => {
     }, []);
     return (
         <nav id="nav-bar" className={Styles.nav}>
-            <div className="row outerContainer">
-                <div className="col span-1-of-3">
+            <div className="gridRow outerContainer">
+                <div className="gridCol gridSpan-1-of-3">
                     
                 </div>
-                <div className={Styles.outerNavLink+" col span-2-of-3"}>
+                <div className={Styles.outerNavLink+" gridCol gridSpan-2-of-3"}>
                     <ul className={Styles.navLink}>
                         <li className = { router.pathname === '/' ? Styles.fixedLink : Styles.normal } >
                             <Link href="">Home</Link>
