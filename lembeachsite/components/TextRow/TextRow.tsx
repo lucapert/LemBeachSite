@@ -1,13 +1,19 @@
 import React from 'react';
 import Styles from '../TextRow/TextRow.module.scss';
-const TextRow = () => {
+interface IProps {
+    title: string;
+    article: string;
+}
+const TextRow = (props:IProps) => {
     return (
-        <div className={ Styles.textRowContainer }>
-            <h2 >MARE, SPORT, DIVERTIMENTO E TANTO ALTRO...</h2>
-            <hr className={ Styles.hrTitle } style={ {borderColor: "#f90"} }/>
-            <article className={ Styles.articleTextRow }>
-                Al LEM troverai strutture sportive per poter tenerti sempre in allenamento. Corsi per tutti i livelli e tutte le fasce di età.
-            </article>
+        <div id="textRow" className={ Styles.textRowContainer }>
+            <div>
+                <h2 >{ props.title }</h2>
+                <hr className={ Styles.hrTitle } style={ {borderColor: "#f90"} }/>
+                <article className={ Styles.articleTextRow }>
+                    { props.article }
+                </article>
+            </div>
         </div>
     );
 };

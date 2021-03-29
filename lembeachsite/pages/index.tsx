@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <>
       <CarouselReactB />
-      <Row backGroudColor="#ededed" children={ <TextRow /> }/>
+      <Row backGroudColor="#ededed" children={ <TextRow title="MARE, SPORT, DIVERTIMENTO E TANTO ALTRO..." article="Al LEM troverai strutture sportive per poter tenerti sempre in allenamento. Corsi per tutti i livelli e tutte le fasce di età."  /> }/>
     </>
   )
 }

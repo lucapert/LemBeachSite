@@ -127,3 +127,8 @@ ol.carousel-indicators {
     transform:translateY(170px);
   }
 }
+
+/* fade effect */
+#textRow > div {
+  opacity:0;
+}

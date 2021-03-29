@@ -8,25 +8,6 @@ const Nav = () => {
     const showChilds = (target) => {
         
     }
-    useEffect(() => {
-        // When the user scrolls the page, execute myFunction
-        window.document.body.onscroll = function() {myFunction()};
-
-        // Get the header
-        var header = window.document.getElementById("nav-bar");
-
-        // Get the offset position of the navbar
-        var sticky = header.offsetTop;
-
-        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-        function myFunction() {
-        if (window.pageYOffset > sticky) {
-            header.classList.add("sticky");
-        } else {
-            header.classList.remove("sticky");
-        }
-        }
-    }, []);
     return (
         <nav id="nav-bar" className={Styles.nav}>
             <div className="gridRow outerContainer">
