@@ -114,10 +114,10 @@ ol.carousel-indicators {
 
 .fadeInVertical 
 {
-  animation: 2s slide-down 0.2s forwards;
-  -moz-animation: 2s slide-down 0.2s forwards;
-  -webkit-animation: 2s slide-down 0.2s forwards;
-  -o-animation: 2s slide-down 0.2s forwards; 
+  animation: 0.8s slide-down 0.2s forwards;
+  -moz-animation: 0.8s slide-down 0.2s forwards;
+  -webkit-animation: 0.8s slide-down 0.2s forwards;
+  -o-animation: 0.8s slide-down 0.2s forwards; 
   transform:translateY(-200px); 
 }
 
