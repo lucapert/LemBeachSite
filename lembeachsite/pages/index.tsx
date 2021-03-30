@@ -4,6 +4,7 @@ import Row from '../components/Row/Row';
 import Cards from '../components/Cards/Cards';
 import TextRow from '../components/TextRow/TextRow';
 import News from '../components/News/News';
+import InfoAndContacts from '../components/InfoAndContacts/InfoAndContacts';
 export default function Home() {
   return (
     <>
@@ -12,6 +13,8 @@ export default function Home() {
       <Row backGroudColor="#ffffff" children={ <Cards /> } />
       <Row backGroudColor="#ededed" children={ <TextRow title="News, stay tuned" article="Gli ultimi eventi in programma..."  /> }/>
       <Row backGroudColor="#ffffff" children={ <News /> } />
+      <Row backGroudColor="#007FFF" children={ <TextRow title={ "resta in contatto con noi".toUpperCase() } article="" /> } />
+      <Row backGroudColor="#1AA2B0" children={ <InfoAndContacts /> } />
     </>
   )
 }
