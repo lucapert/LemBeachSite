@@ -1,0 +1,31 @@
+.eventContainer {
+    padding: 1%;
+    max-height: 100%;
+    font-family: Poppins sans-serif;
+    img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .eventFeature {
+        margin-bottom: 5px;
+    }
+    .eventIcon {
+        display: inline-block;
+        width: 30px;
+        text-align: center;
+        color: #f90;
+        font-size: 120%;
+        margin-right: 10px;
+        line-height: 120%;
+        vertical-align: middle;
+        margin-top: -5px;
+    }
+    .eventText {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        color: #333;
+        margin-bottom: 5px;
+    }
+}
