@@ -16,8 +16,8 @@ const InfoAndContacts = () => {
                     Bagni Numero 70<br />
                     Str. delle Marche, 61122 Pesaro PU<br />
                     Tel. +39 3478501375<br />
-                    E-mail <a href="mailto:info@lem@gmail.it" style={{color: "#fff"}}>info@surfsegnana.it</a><br />
-                    Facebook <a href="https://www.facebook.com/luomo.eilmare.3" target="_blank" style={{color: "#fff"}}>LEM</a>
+                    E-mail <a href="mailto:info@lem@gmail.it" style={{color: "#fff"}}><b>info.lem@gmail.it</b></a><br />
+                    Facebook <a href="https://www.facebook.com/luomo.eilmare.3" target="_blank" style={{color: "#fff"}}><b>Luome e il mare</b></a>
                 </p>
                 <br />							
                 <h2 className="templateEdit">
