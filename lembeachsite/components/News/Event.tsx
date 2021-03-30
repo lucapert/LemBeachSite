@@ -26,7 +26,6 @@ const Event = (props: IProps) => {
             <p className={ Styles.eventText }>
                 { props.Text }
             </p>
-            {/* <a id="readMore">{ props.BtnTitle }</a> */}
         </div>
     );
 };
