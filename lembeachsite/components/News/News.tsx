@@ -13,7 +13,9 @@ const News = () => {
             BtnTitle="Leggi altro"/>
             <Event Text={ text } Date={ new Date().toDateString() } EventAlt="test" StartHour={ new Date().getHours().toString() } StartMinute={ new Date().getMinutes().toString() } Title={ "notte candele".toUpperCase() }
             BtnTitle="Leggi altro"/>
-            <a id="readMore">{ "Read more" }</a>
+            <div className={ Styles.buttonContainer }> 
+                <a id="readMore">{ "Read more" }</a>
+            </div>
         </div>
     );
 };

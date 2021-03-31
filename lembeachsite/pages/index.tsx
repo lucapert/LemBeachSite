@@ -9,12 +9,10 @@ export default function Home() {
   return (
     <>
       <CarouselReactB />
-      <Row backGroudColor="#ededed" children={ <TextRow title="MARE, SPORT, DIVERTIMENTO E TANTO ALTRO..." article="Al LEM troverai strutture sportive per poter tenerti sempre in allenamento. Corsi per tutti i livelli e tutte le fasce di età."  /> }/>
+      <Row backGroudColor="#ededed" children={ <TextRow titleColor="inherited" title="MARE, SPORT, DIVERTIMENTO E TANTO ALTRO..." article="Al LEM troverai strutture sportive per poter tenerti sempre in allenamento. Corsi per tutti i livelli e tutte le fasce di età."  /> }/>
       <Row backGroudColor="#ffffff" children={ <Cards /> } />
-      <Row backGroudColor="#ededed" children={ <TextRow title="News, stay tuned" article="Gli ultimi eventi in programma..."  /> }/>
+      <Row backGroudColor="#ededed" children={ <TextRow titleColor="indherited" title="News, stay tuned" article="Gli ultimi eventi in programma..."  /> }/>
       <Row backGroudColor="#ffffff" children={ <News /> } />
-      <Row backGroudColor="#007FFF" children={ <TextRow title={ "resta in contatto con noi".toUpperCase() } article="" /> } />
-      <Row backGroudColor="#1AA2B0" children={ <InfoAndContacts /> } />
     </>
   )
 }

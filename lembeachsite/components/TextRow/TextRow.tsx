@@ -3,12 +3,13 @@ import Styles from '../TextRow/TextRow.module.scss';
 interface IProps {
     title: string;
     article: string;
+    titleColor: string;
 }
 const TextRow = (props:IProps) => {
     return (
         <div id="textRow" className={ Styles.textRowContainer }>
             <div>
-                <h2 >{ props.title }</h2>
+                <h2 style={{ color: props.titleColor }} >{ props.title }</h2>
                 <hr className={ Styles.hrTitle } style={ {borderColor: "#f90"} }/>
                 <article className={ Styles.articleTextRow }>
                     { props.article }
