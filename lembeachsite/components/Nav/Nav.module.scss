@@ -6,61 +6,77 @@
     justify-content: center;
     position: relative;
     align-items: center;
-    .outerNavLink {
+    .innerNav 
+    {
         display: flex;
-        justify-content: flex-end;
-        .navLink {
+        height: 100%;
+        .logo {
+            width: 25%;
+        }
+        .outerNavLink {
             display: flex;
-            padding-left: 0;
-            position: relative;
-            color: #f7f7f7;
-            li {
-                letter-spacing: 1px;
-                list-style-type: none;
-                margin-left: 10px;
-                margin-right: 10px;
-                font-size: 130%;
-                font-weight: 700;
-                display: inline-block;
+            justify-content: flex-end;
+            width: 75%;
+            .navLink {
+                display: flex;
+                padding-left: 0;
                 position: relative;
-                cursor: pointer;
-            }
-            li.normal {
-                &:before {
-                    content: "";
-                    position: absolute;
-                    width: 0;
-                    height: 2px;
-                    bottom: 0;
-                    right: 0;
-                    background-color: #f90;
-                    visibility: hidden;
-                    transition: all 0.3s ease-in-out;
+                color: #f7f7f7;
+                margin-bottom: 0;
+                li {
+                    letter-spacing: 1px;
+                    list-style-type: none;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    font-size: 130%;
+                    font-weight: 700;
+                    display: inline-block;
+                    position: relative;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    div {
+                        position: relative;
+                        top: -5px;
+                    }
                 }
-                &:hover:before {
-                    visibility: visible;
-                    width: 100%;
+                div.normal {
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        width: 0;
+                        height: 2px;
+                        bottom: 0;
+                        right: 0;
+                        background-color: #f90;
+                        visibility: hidden;
+                        transition: all 0.3s ease-in-out;
+                    }
+                    &:hover:before {
+                        visibility: visible;
+                        width: 100%;
+                    }
+                    .iconChevron {
+                        font-size: 15px;
+                        margin-left: 5px;
+                        vertical-align: middle;
+                    }
                 }
-                .iconChevron {
-                    font-size: 15px;
-                    margin-left: 5px;
-                    vertical-align: middle;
+                div.dropDown {
+                    &:hover:before {
+                        visibility: hidden;
+                    }
                 }
-            }
-            li.dropDown {
-                &:hover:before {
-                    visibility: hidden;
+                div.fixedLink {
+                    @extend .normal;
+                    &:before {
+                        visibility: visible;
+                        width: 100%;
+                    }
                 }
-            }
-            li.fixedLink {
-                @extend .normal;
-                &:before {
-                    visibility: visible;
-                    width: 100%;
+                li a {
+                    color: #ffffff;
                 }
-            }
-            li a {
-                color: #ffffff;
             }
         }
     }
