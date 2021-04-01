@@ -1,11 +1,10 @@
 import React from 'react';
 import Styles from '../Carousel/Carousel.module.scss';
 import { Container, Row, Col, Navbar, Nav, NavDropdown, Form, FormControl, Button, Carousel } from 'react-bootstrap'
-
 const CarouselReactB = () => {
     return (
         <div className={ Styles.carouselContainer }>
-            <Carousel fade>
+            <Carousel fade pause={false}>
                 <Carousel.Item>
                     <div style={ { backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url(/vendors/images/ws1.jpg)', height:
     '100vh', backgroundSize: 'cover', backgroundPosition: 'center'} }>
