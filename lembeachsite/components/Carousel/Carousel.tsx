@@ -1,7 +1,12 @@
-import React from 'react';
+import  React from 'react';
 import Styles from '../Carousel/Carousel.module.scss';
-import { Container, Row, Col, Navbar, Nav, NavDropdown, Form, FormControl, Button, Carousel } from 'react-bootstrap'
+import { useRouter } from 'next/router';
+import { Container, Row, Col, Navbar, Nav, NavDropdown, Form, FormControl, Button, Carousel } from 'react-bootstrap';
+import * as it from '../../locales/it/index';
+import * as en from '../../locales/en/index';
 const CarouselReactB = () => {
+    const router = useRouter();
+    const t = checkTranslation(router.locale);
     return (
         <div className={ Styles.carouselContainer }>
             <Carousel fade pause={false}>
@@ -10,8 +15,8 @@ const CarouselReactB = () => {
     '100vh', backgroundSize: 'cover', backgroundPosition: 'center'} }>
                         <div className="fadeInVertical">
                             <Carousel.Caption>
-                                <h1>First slide label</h1>
-                                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                <h1>{ t.carouselTitle}</h1>
+                                <p>{ t.carouselSubTitle }.</p>
                             </Carousel.Caption>
                         </div>
                     </div>
@@ -42,5 +47,19 @@ const CarouselReactB = () => {
         </div>
     );
 };
+
+const checkTranslation = (locale: string) => {
+    var result;
+    switch(locale)
+    {
+        case 'en':
+            result = en.default;
+            break;
+        case 'it':
+            result = it.default;
+            break;
+    }
+    return result;
+}
 
 export default CarouselReactB;

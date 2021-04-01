@@ -1,5 +1,6 @@
 import Styles from './Header.module.scss';
 import Nav from '../Nav/Nav';
+import Link from 'next/link';
 const Header = () => {
     return (
         <div>
@@ -18,21 +19,21 @@ const Header = () => {
                             </div>
                         </div>
                         <div>
-                            <a href="#" className={Styles.flagIco}>
-                                <img src="/vendors/flags/iconfinder_italy_325967.png"></img>
-                            </a>
-                            <a href="#" className={Styles.flagIco}>
-                                <img src="/vendors/flags/iconfinder_United_Kingdom_2361499.png" className={Styles.icoEng}></img>
-                            </a>
-                            <a href="#" className={Styles.flagIco}>
-                                <img src="/vendors/flags/iconfinder_germany_325973.png"></img>
-                            </a>
-                            <a href="#" className={Styles.flagIco}>
-                                <img src="/vendors/flags/iconfinder_france_325972.png"></img>
-                            </a>
-                            <a href="#" className={Styles.flagIco}>
-                                <img src="/vendors/flags/iconfinder_Untitled-2-05_3253482.png"></img>
-                            </a>
+                            <Link href="/" locale="it">
+                                <a className={Styles.flagIco}><img src="/vendors/flags/iconfinder_italy_325967.png"></img></a>
+                            </Link>
+                            <Link href="/" locale="en">
+                                <a><img src="/vendors/flags/iconfinder_United_Kingdom_2361499.png" className={Styles.icoEng}></img></a>
+                            </Link>
+                            <Link href="/">
+                                <a className={Styles.flagIco}><img src="/vendors/flags/iconfinder_germany_325973.png"></img></a>
+                            </Link>
+                            <Link href="/">
+                                <a className={Styles.flagIco}><img src="/vendors/flags/iconfinder_france_325972.png"></img></a>
+                            </Link>
+                            <Link href="/">
+                                <a className={Styles.flagIco}><img src="/vendors/flags/iconfinder_Untitled-2-05_3253482.png"></img></a>
+                            </Link>
                         </div>
                         <div className={Styles.socials}>
                             Resta aggiornato, seguici sui nostri social:&nbsp;&nbsp;
