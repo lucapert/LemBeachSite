@@ -215,34 +215,47 @@ a#readMore:hover {
 }
 
 /*up to 800*/
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
   .outerContainer {
     width: 700px;
   }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 750px) {
   .outerContainer {
     width: 600px;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
   .outerContainer {
     width: 500px;
   }
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 550px) {
   .outerContainer {
-    width: 400px;
+    width: 450px;
   }
 }
+@media only screen and (max-width: 450px) {
+  .outerContainer {
+    width: 350px;
+  }
+}
+
 @media only screen and (max-width: 400px) {
   .outerContainer {
-    width: 300px;
+    width: 320px;
   }
 }
-@media only screen and (max-width: 300px) {
+
+@media only screen and (max-width: 370px) {
   .outerContainer {
-    width: 200px;
+    width: 320px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .outerContainer {
+    width: 270px;
   }
 }
