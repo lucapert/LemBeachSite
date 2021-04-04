@@ -90,15 +90,14 @@
 
     .hideMobileMenu {
         display: block;
-        transition: opacity 1s ease-out;
         opacity: 0;
-        height: 0;
+        max-height: 0;
         overflow: hidden;
-        transition: all 1s;
+        transition: all ease-in-out 0.8s;
     }
     .showMobileMenu {
         opacity: 1;
-        height: auto;
+        max-height: 500px;
         animation: ease-in-out;
     }
 }
