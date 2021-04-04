@@ -65,7 +65,22 @@
             }
         }
     }
-
-
 }
 
+@media only screen and (max-width: 767px) {
+    .mainHeader {
+        .mainHeader_inner
+        {
+            justify-content: center;
+            .infoIcon {
+                vertical-align: sub;
+            }
+            .contacts {
+                display: none;
+            }
+            .socials {
+                display: none;
+            }
+        }
+    }  
+}

@@ -36,7 +36,7 @@ const Header = () => {
                             </Link>
                         </div>
                         <div className={Styles.socials}>
-                            Resta aggiornato, seguici sui nostri social:&nbsp;&nbsp;
+                            Seguici su:&nbsp;&nbsp;
                             <a href="https://www.facebook.it" className={Styles.social}>
                                 <span className={Styles.facebook+" material-icons-outlined"}>
                                     facebook
