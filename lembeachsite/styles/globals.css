@@ -191,3 +191,37 @@ a#readMore:hover {
   background-color: #f90;
   color: #ffffff
 }
+
+/* Media query */
+
+@media only screen and (max-width: 1180px) {
+  .outerContainer {
+    width: 1024px;
+  }
+}
+
+/*up to 1024px*/
+@media only screen and (max-width: 1024px) {
+  .outerContainer {
+    width: 900px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .outerContainer {
+    width: 800px;
+  }
+}
+
+/*up to 800*/
+@media only screen and (max-width: 800px) {
+  .outerContainer {
+    width: 700px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .outerContainer {
+    width: 600px;
+  }
+}

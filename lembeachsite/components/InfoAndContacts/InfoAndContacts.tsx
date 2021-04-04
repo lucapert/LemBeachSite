@@ -3,8 +3,8 @@ import Styles from './InfoAndContacts.module.scss';
 const InfoAndContacts = () => {
     return (
         <div className="gridRow">
-            <img src="/vendors/images/GMapsLEM.png" className={"gridCol gridSpan-1-of-2"} />
-            <div className="gridCol gridSpan-1-of-2">
+            <img src="/vendors/images/GMapsLEM.png" className={Styles.contact + " gridCol gridSpan-1-of-2"} />
+            <div className={ Styles.contact + " gridCol gridSpan-1-of-2"}>
                 <h2 className="templateEdit">
                     INFO &amp; CONTATTI
                 </h2>

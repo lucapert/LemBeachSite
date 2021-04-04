@@ -29,3 +29,11 @@
         margin-bottom: 5px;
     }
 }
+
+/*up to 800*/
+@media only screen and (max-width: 800px) {
+    .eventContainer { 
+      width: 50%;
+      margin: 0;
+    }
+}

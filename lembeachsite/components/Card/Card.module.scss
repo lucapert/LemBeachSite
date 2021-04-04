@@ -62,6 +62,15 @@
   }
 }
 
+/*up to 800*/
+@media only screen and (max-width: 800px) {
+  .card {
+    max-width: 50%;
+  }
+}
+
+/*.......*/
+
 @media only screen and (max-width: 540px)
 {
   .card {
