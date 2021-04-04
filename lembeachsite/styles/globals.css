@@ -225,3 +225,23 @@ a#readMore:hover {
     width: 600px;
   }
 }
+@media only screen and (max-width: 600px) {
+  .outerContainer {
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .outerContainer {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .outerContainer {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .outerContainer {
+    width: 200px;
+  }
+}
