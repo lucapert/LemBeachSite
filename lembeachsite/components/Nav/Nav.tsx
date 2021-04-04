@@ -37,11 +37,11 @@ const Nav = () => {
         //     </div>  
         // </nav>
         <nav id="nav-bar" className={Styles.nav}>
-            <div className={Styles.innerNav + " outerContainer"+" gridRow"}>
-                <div className={"gridCol gridSpan-1-of-4" }>
+            <div className={Styles.innerNav + " outerContainer"}>
+                <div className={ Styles.logo }>
                     
                 </div>
-                <div className={Styles.outerNavLink + " gridCol gridSpan-3-of-4"}>
+                <div className={Styles.outerNavLink}>
                     <ul className={Styles.navLink}>
                         <li onClick={() => goTo('#')}>
                             <div className = { [router.pathname === '/' ? Styles.fixedLink : Styles.normal].join(" ") }>Home</div>
@@ -56,6 +56,14 @@ const Nav = () => {
                         </li>
                         <li onClick={() => goTo('')}>
                             <div className={Styles.normal}>Chi siamo</div>
+                        </li>
+                        <li className="has-dropdown">
+                            <div className={Styles.dropDown + " " + Styles.normal}>I corsi<span className={Styles.iconChevron+" ion-chevron-down"}></span></div>
+                            <ul className="dropdown-menu">
+                                <li><Link href="/it/33/viaggi-aziendali-sul-lago-di-garda">Viaggi aziendali</Link></li>                                               
+                                <li><Link href="/it/136/teambuilding-lago-di-garda-surf-segnana">Incentive e Teambuilding</Link></li>                                               
+                                <li><Link href="/it/34/lago-di-garda-gite-scolastiche-sportive">Gite scolastiche</Link></li>                                               
+                            </ul>
                         </li>
                     </ul> 
                 </div>    

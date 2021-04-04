@@ -37,6 +37,18 @@ function MyApp({ Component, pageProps }) {
         }
       }); 
     }
+    document.querySelectorAll(".has-dropdown").forEach((el:HTMLElement) => {
+      var ul = (el.lastChild as HTMLElement);
+      var ulRect = ul.getBoundingClientRect();
+      if(ulRect.right > window.document.body.clientWidth)
+      {
+        var dropdownRect = el.getBoundingClientRect();
+        var toShift1 = window.document.body.clientWidth - dropdownRect.right;
+        var toShift2 = ulRect.right - window.document.body.clientWidth;
+        ul.style.position = "absolute";
+        ul.style.left = -(toShift1 + toShift2)+"px"
+      }
+    });
 }, []);
   return (
     <Layout>
