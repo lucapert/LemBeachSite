@@ -37,11 +37,11 @@ const Nav = () => {
         //     </div>  
         // </nav>
         <nav id="nav-bar" className={Styles.nav}>
-            <div className={Styles.innerNav + " outerContainer"}>
-                <div className={ Styles.logo }>
+            <div className={Styles.innerNav + " outerContainer"+" gridRow"}>
+                <div className={"gridCol gridSpan-1-of-4" }>
                     
                 </div>
-                <div className={Styles.outerNavLink}>
+                <div className={Styles.outerNavLink + " gridCol gridSpan-3-of-4"}>
                     <ul className={Styles.navLink}>
                         <li onClick={() => goTo('#')}>
                             <div className = { [router.pathname === '/' ? Styles.fixedLink : Styles.normal].join(" ") }>Home</div>
