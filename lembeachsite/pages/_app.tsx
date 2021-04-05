@@ -49,6 +49,9 @@ function MyApp({ Component, pageProps }) {
         ul.style.left = -(toShift1 + toShift2)+"px"
       }
     });
+    // assign max-width to card title
+    var cardWidth = (document.getElementById("card") as HTMLElement).clientWidth;
+    (document.getElementById("cardTitle") as HTMLElement).style.maxWidth = cardWidth+"px";
 }, []);
   return (
     <Layout>

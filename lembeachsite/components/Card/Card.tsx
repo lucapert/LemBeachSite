@@ -11,10 +11,10 @@ export interface ICardProps {
 var Card =  (props:ICardProps) => {
   return (
     <div className={ Styles.card }>
-        <div className={ Styles.innerCard }>
+        <div id="card" className={ Styles.innerCard }>
           <a href={ props.LinkUrl } className={ Styles.linkContainer }>
             <img className={ Styles.img } src={ props.ImgUrl } ></img>
-            <h1 className={ Styles.cardTitle }>{ props.Title }</h1>
+            <h1 id="cardTitle" className={ Styles.cardTitle }>{ props.Title }</h1>
           </a>
         </div>
       </div>
