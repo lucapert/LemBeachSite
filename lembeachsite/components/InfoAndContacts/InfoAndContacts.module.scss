@@ -1,7 +1,9 @@
-// .infoAndContactsContainer {
-//     background-image: url("");
-//     padding: 100px;
-// }
+.infoAndContactsContainer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/vendors/images/ws1.jpg);
+    background-size: cover;
+    color: #fff;
+    background-attachment: fixed;
+}
 
 /*up to 800*/
 @media only screen and (max-width: 800px) {
