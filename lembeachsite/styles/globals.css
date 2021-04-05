@@ -259,3 +259,9 @@ a#readMore:hover {
     width: 270px;
   }
 }
+
+@media only screen and (max-width: 300px) {
+  .outerContainer {
+    width: 230px;
+  }
+}
