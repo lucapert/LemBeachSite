@@ -1,6 +1,7 @@
 import '../styles/globals.css'
 import Layout from '../components/Layout/Layout';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import CardStyles from '../components/Card/Card.module.scss'
 import { useEffect } from 'react';
 
 function MyApp({ Component, pageProps }) {
@@ -50,8 +51,10 @@ function MyApp({ Component, pageProps }) {
       }
     });
     // assign max-width to card title
-    var cardWidth = (document.getElementById("card") as HTMLElement).clientWidth;
-    (document.getElementById("cardTitle") as HTMLElement).style.maxWidth = cardWidth+"px";
+    var cardWidth = (document.querySelector(".card") as HTMLElement).clientWidth;
+    document.querySelectorAll(".cardTitle").forEach((el:HTMLElement) => {
+      el.style.maxWidth = cardWidth+"px";
+    });
 }, []);
   return (
     <Layout>

@@ -7,7 +7,6 @@ interface IProps {
 }
 
 const Row = (props:IProps) => {
-    debugger;
     return (
         <div className={ [Styles.rowContainer, props.styles ? props.styles:""].join(" ") } style={{ backgroundColor: props.backGroudColor }}>
             <div className={Styles.inner + " outerContainer"}>
