@@ -18,7 +18,7 @@ const Header = () => {
                                 0721-111111
                             </div>
                         </div>
-                        <div>
+                        <div className={ Styles.localizationIco }>
                             <Link href="/" locale="it">
                                 <a className={Styles.flagIco}><img src="/vendors/flags/iconfinder_italy_325967.png"></img></a>
                             </Link>

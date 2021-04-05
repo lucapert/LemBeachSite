@@ -50,9 +50,9 @@ const Nav = () => {
                                     <li className="has-dropdown">
                                         <div className={Styles.dropDown + " " + Styles.normal}>I corsi<span className={Styles.iconChevron+" ion-chevron-down"}></span></div>
                                         <ul className="dropdown-menu">
-                                            <li><Link href="/it/33/viaggi-aziendali-sul-lago-di-garda">Viaggi aziendali</Link></li>                                               
-                                            <li><Link href="/it/136/teambuilding-lago-di-garda-surf-segnana">Incentive e Teambuilding</Link></li>                                               
-                                            <li><Link href="/it/34/lago-di-garda-gite-scolastiche-sportive">Gite scolastiche</Link></li>                                               
+                                            <li><Link href="/it/33/viaggi-aziendali-sul-lago-di-garda">Corso base</Link></li>                                               
+                                            <li><Link href="/it/136/teambuilding-lago-di-garda-surf-segnana">Corso intermedio</Link></li>                                               
+                                            <li><Link href="/it/34/lago-di-garda-gite-scolastiche-sportive">Corso intermedio</Link></li>                                               
                                         </ul>
                                     </li>
                                     <li onClick={() => goTo('')}>
@@ -61,9 +61,9 @@ const Nav = () => {
                                     <li className="has-dropdown">
                                         <div className={Styles.dropDown + " " + Styles.normal}>I corsi<span className={Styles.iconChevron+" ion-chevron-down"}></span></div>
                                         <ul className="dropdown-menu">
-                                            <li><Link href="/it/33/viaggi-aziendali-sul-lago-di-garda">Viaggi aziendali</Link></li>                                               
-                                            <li><Link href="/it/136/teambuilding-lago-di-garda-surf-segnana">Incentive e Teambuilding</Link></li>                                               
-                                            <li><Link href="/it/34/lago-di-garda-gite-scolastiche-sportive">Gite scolastiche</Link></li>                                               
+                                            <li><Link href="/it/33/viaggi-aziendali-sul-lago-di-garda">Corso base</Link></li>                                               
+                                            <li><Link href="/it/136/teambuilding-lago-di-garda-surf-segnana">Corso intermedio</Link></li>                                               
+                                            <li><Link href="/it/34/lago-di-garda-gite-scolastiche-sportive">Corso intermedio</Link></li>                                                  
                                         </ul>
                                     </li>
                                 </ul> 
@@ -77,14 +77,20 @@ const Nav = () => {
                 {
                         <div className={Styles.menuMobile}>
                             <div className={ [Styles.hideMobileMenu, showMobileMenu ? Styles.showMobileMenu:""].join(" ")  }>
-                                <div>
-                                    Test
+                                <div onClick={() => goTo('#')}>
+                                    <div className = { [router.pathname === '/' ? Styles.fixedMobileLink : Styles.normal].join(" ") }>Home</div>
                                 </div>
-                                <div>
-                                    Test
+                                <hr />
+                                <div onClick={() => goTo('#')}>
+                                    <div className = { [router.pathname === '/test' ? Styles.fixedMobileLink : Styles.normal].join(" ") }>Corso base</div>
                                 </div>
-                                <div>
-                                    Test
+                                <hr />
+                                <div onClick={() => goTo('#')}>
+                                    <div className = { [router.pathname === '/test' ? Styles.fixedMobileLink : Styles.normal].join(" ") }>Corso intermedio</div>
+                                </div>
+                                <hr />
+                                <div onClick={() => goTo('#')}>
+                                    <div className = { [router.pathname === '/test' ? Styles.fixedMobileLink : Styles.normal].join(" ") }>Corso esperto</div>
                                 </div>
                             </div>
                         </div>

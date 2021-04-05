@@ -88,7 +88,23 @@
             }
         }
         .menuMobile {
+            font-family: 'Ubuntu', sans-serif;
             position: absolute;
+            color: #ffffff;
+            width: 80%;
+            font-size: 120%;
+            .normal, .fixedMobileLink {
+                padding: 4px;
+            }
+            .fixedMobileLink {
+                color: #f90;
+            }
+            .hideMobileMenu > div:last-child {
+                padding-bottom: 10px;
+            }
+            hr {
+                margin: 0;
+            }
         }
     }
 

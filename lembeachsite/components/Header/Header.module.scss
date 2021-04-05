@@ -69,14 +69,24 @@
 
 @media only screen and (max-width: 767px) {
     .mainHeader {
+        height: auto;
         .mainHeader_inner
         {
-            justify-content: center;
+            justify-content: space-between;
+            position: relative;
             .infoIcon {
                 vertical-align: sub;
             }
             .contacts {
-                display: none;
+                display: block;
+                padding-top: 5px;
+                padding-bottom: 5px;
+            }
+            .localozationIco {
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translate(0, -50%);
             }
             .socials {
                 display: none;

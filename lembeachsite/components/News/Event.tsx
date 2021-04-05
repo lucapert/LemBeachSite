@@ -14,7 +14,7 @@ const Event = (props: IProps) => {
     return (
         <div className={Styles.eventContainer + " gridCol gridSpan-1-of-4"}>
             <img src="https://fakeimg.pl/300x200/" alt={ props.EventAlt } />
-            <h4>{ props.Title }</h4>  
+            <h5>{ props.Title }</h5>  
             <div className={Styles.eventFeature}>
                 <i className={Styles.eventIcon + " ion-calendar"}></i>
                 { props.Date }

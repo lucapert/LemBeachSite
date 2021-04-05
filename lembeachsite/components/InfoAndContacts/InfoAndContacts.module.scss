@@ -3,11 +3,18 @@
     background-size: cover;
     color: #fff;
     background-attachment: fixed;
+    .infoTitle {
+        color: #f90;
+    }
 }
 
 /*up to 800*/
 @media only screen and (max-width: 800px) {
     .contact {
         width: 100%;
+        margin-top: 20px;
+        .infoText {
+            font-size: 120%;
+        }
     }
 }

@@ -5,11 +5,11 @@ const InfoAndContacts = () => {
         <div className="gridRow">
             <img src="/vendors/images/GMapsLEM.png" className={Styles.contact + " gridCol gridSpan-1-of-2"} />
             <div className={ Styles.contact + " gridCol gridSpan-1-of-2"}>
-                <h2 className="templateEdit">
+                <h2 className={ Styles.infoTitle}>
                     INFO &amp; CONTATTI
                 </h2>
                 <hr />
-                <p className="templateEdit" style={{ color: "White" } }>
+                <p className={ Styles.infoText } style={{ color: "White" } }>
                     Sede:<br /><br />
                     <strong>Luomo e il mare a.s.d<br />
                     </strong><br />
@@ -20,11 +20,11 @@ const InfoAndContacts = () => {
                     Facebook <a href="https://www.facebook.com/luomo.eilmare.3" target="_blank" style={{color: "#fff"}}><b>Luome e il mare</b></a>
                 </p>
                 <br />							
-                <h2 className="templateEdit">
+                <h2 className={ Styles.infoTitle }>
                     ORARI
                 </h2>
                 <hr />
-                <p className="templateEdit" style={{ color:"White" }}>
+                <p className= { Styles.infoText } style={{ color:"White" }}>
                     Dal 31 Maggio { new Date().getFullYear() } al 20 Ottobre - Ogni giorno dalle 08:30 alle 18:30
                 </p>
             </div>
