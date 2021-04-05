@@ -87,16 +87,21 @@
                 display: none;
             }
         }
+        .menuMobile {
+            position: absolute;
+        }
     }
 
     .hideMobileMenu {
         display: block;
+        // position: absolute;
         opacity: 0;
         max-height: 0;
         overflow: hidden;
         transition: all ease-in-out 0.8s;
     }
     .showMobileMenu {
+        // position: static;
         opacity: 1;
         max-height: 500px;
         animation: ease-in-out;
@@ -118,6 +123,9 @@
                     font-size: 50px;
                     color: #f90;
                 }
+            }
+            .menuMobile {
+                position:static;
             }
         }  
     }

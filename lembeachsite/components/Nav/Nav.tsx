@@ -75,7 +75,7 @@ const Nav = () => {
                     }
                 </div>
                 {
-                        <>
+                        <div className={Styles.menuMobile}>
                             <div className={ [Styles.hideMobileMenu, showMobileMenu ? Styles.showMobileMenu:""].join(" ")  }>
                                 <div>
                                     Test
@@ -87,7 +87,7 @@ const Nav = () => {
                                     Test
                                 </div>
                             </div>
-                        </>
+                        </div>
                 }    
             </div>  
         </nav>
