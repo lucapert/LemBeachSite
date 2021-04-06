@@ -1,5 +1,4 @@
 .mainHeader {
-    height: 40px;
     background-color: #007FFF
     ;
     display: flex;
@@ -12,13 +11,15 @@
         display: flex;
         justify-content: space-between;
         color: #f7f7f7;
+        position: relative;
         .infoIcon {
             vertical-align: sub;
         }
         .contacts {
-            display: flex;
+            padding: 10px 0;
             .contactsEmail {
                 margin-right: 20px;
+                margin-bottom: 2px;
             }
             .telephoneIco {
                 font-size: 20px;
@@ -28,9 +29,16 @@
                 top: -2px;
             }
         }
-        .flagIco {
-            margin-left: 3px;
-            margin-right: 3px;
+        .localizationIco {
+            display: flex;
+            position: absolute;
+            right: 50%;
+            top: 50%;
+            transform: translate(0, -50%);
+            .flagIco {
+                margin-left: 3px;
+                margin-right: 3px;
+            }
         }
         img.icoEng {
             border-radius: 20px;
@@ -38,8 +46,10 @@
             margin-right: 3px;
         }
         .socials {
-            position: relative;
-            top: -5px;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translate(0, -50%);
             .social {
                 padding: 3px;
                 cursor: pointer;
