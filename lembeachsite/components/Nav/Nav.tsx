@@ -91,14 +91,6 @@ const Nav = () => {
                                     <li onClick={() => goTo('')}>
                                         <div className={Styles.normal}>Chi siamo</div>
                                     </li>
-                                    <li className="has-dropdown">
-                                        <div className={Styles.dropDown + " " + Styles.normal}>I corsi<span className={Styles.iconChevron+" ion-chevron-down"}></span></div>
-                                        <ul className="dropdown-menu">
-                                            <li><Link href="/it/33/viaggi-aziendali-sul-lago-di-garda">Corso base</Link></li>                                               
-                                            <li><Link href="/it/136/teambuilding-lago-di-garda-surf-segnana">Corso intermedio</Link></li>                                               
-                                            <li><Link href="/it/34/lago-di-garda-gite-scolastiche-sportive">Corso intermedio</Link></li>                                                  
-                                        </ul>
-                                    </li>
                                 </ul> 
                             </div>
                             <div className={ Styles.showOnMinWidth } onClick = { (event) => {mobileMenuOnClick(event)} } >
@@ -111,33 +103,30 @@ const Nav = () => {
                         <div className={Styles.menuMobile}>
                             <div className={ [Styles.hideMobileMenu, showMobileMenu ? Styles.showMobileMenu:""].join(" ")  }>
                                 <div onClick={() => goTo('#')}>
-                                    <div className = { [router.pathname === '/' ? Styles.fixedMobileLink : Styles.normal].join(" ") }>Home</div>
-                                </div>
-                                <hr />
-                                <div onClick={() => goTo('#')}>
-                                    <div className = { [router.pathname === '/test' ? Styles.fixedMobileLink : Styles.normal].join(" ") }>Corso base</div>
-                                </div>
-                                <hr />
-                                <div onClick={() => goTo('#')}>
-                                    <div className = { [router.pathname === '/test' ? Styles.fixedMobileLink : Styles.normal].join(" ") }>Corso intermedio</div>
-                                </div>
-                                <hr />
-                                <div onClick={() => goTo('#')}>
-                                    <div className = { [router.pathname === '/test' ? Styles.fixedMobileLink : Styles.normal].join(" ") }>Corso esperto</div>
+                                    <div className = { [router.pathname === '/' ? Styles.fixedMobileLink : Styles.normal].join(" ") }><i className={ Styles.subMenuIcon + " ion-ios-home-outline"}></i>Home</div>
                                 </div>
                                 <hr />
                                 <div>
-                                    <div className={ Styles.normal } onClick={ (e) => { subMenuOnClick(e) } }><span className={ Styles.subMenuDropDownTitle }>I Corsi</span><span className={Styles.iconChevron+" ion-chevron-down"}></span></div>
+                                    <div className={ Styles.normal } onClick={ (e) => { subMenuOnClick(e) } }><span className={ Styles.subMenuDropDownTitle }><span className={ Styles.subMenuIconMaterial + " material-icons"}>
+                                    sailing
+                                    </span>I Corsi</span><span className={Styles.iconChevron+" ion-chevron-down"}></span></div>
                                     {
                                         <div className={ [Styles.subMenu, showSubMenu ? Styles.showMobileSubMenu : ""].join(" ") }>
-                                            <div>Test</div>
-                                            <div>Test</div>  
+                                            <div onClick={() => goTo('#')}>
+                                                <div className = { [router.pathname === '/test' ? Styles.fixedMobileLink : Styles.normal].join(" ") }>Corso base</div>
+                                            </div>
+                                            <div onClick={() => goTo('#')}>
+                                                <div className = { [router.pathname === '/test' ? Styles.fixedMobileLink : Styles.normal].join(" ") }>Corso intermedio</div>
+                                            </div>
+                                            <div onClick={() => goTo('#')}>
+                                                <div className = { [router.pathname === '/test' ? Styles.fixedMobileLink : Styles.normal].join(" ") }>Corso esperto</div>
+                                            </div>
                                         </div>
                                     }
-                                </div>
+                                    </div>
                                 <hr />
                                 <div onClick={() => goTo('#')}>
-                                    <div className = { [router.pathname === '/test' ? Styles.fixedMobileLink : Styles.normal].join(" ") }>Corso esperto</div>
+                                    <div className = { [router.pathname === '/test' ? Styles.fixedMobileLink : Styles.normal].join(" ") }><i className={ Styles.subMenuIcon +" ion-android-sunny"}></i>Chi siamo</div>
                                 </div>
                                 <hr />
                             </div>
