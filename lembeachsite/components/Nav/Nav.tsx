@@ -35,17 +35,18 @@ const Nav = () => {
     }
 
     const subMenuOnClick = (event)  => {
-        setSubMenu(!showSubMenu);
         const el = (event.target as HTMLElement);
         if(el.classList.contains("ion-chevron-down"))
         {
             el.classList.remove("ion-chevron-down");
             el.classList.add("ion-chevron-up");
+            setSubMenu(!showSubMenu);
         }
         else if(el.classList.contains("ion-chevron-up"))
         {
             el.classList.remove("ion-chevron-up");
             el.classList.add("ion-chevron-down");
+            setSubMenu(!showSubMenu);
         }
         if(el.classList.contains(Styles.subMenuDropDownTitle))
         {
@@ -54,11 +55,13 @@ const Nav = () => {
             {
                 targetElement.classList.remove("ion-chevron-down");
                 targetElement.classList.add("ion-chevron-up");
+                setSubMenu(!showSubMenu);
             }
             else if(targetElement.classList.contains("ion-chevron-up"))
             {
                 targetElement.classList.remove("ion-chevron-up");
                 targetElement.classList.add("ion-chevron-down");
+                setSubMenu(!showSubMenu);
             }
         }
     }
