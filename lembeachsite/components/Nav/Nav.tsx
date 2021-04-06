@@ -6,6 +6,7 @@ import { MouseEventHandler, useEffect, useState } from 'react';
 import { route } from 'next/dist/next-server/server/router';
 const Nav = () => {
     const [showMobileMenu, setMobileMenu] = useState(false); 
+    const [showSubMenu, setSubMenu] = useState(false);
     const router = useRouter();
     const showChilds = (target) => {
         
@@ -30,6 +31,35 @@ const Nav = () => {
             el.classList.remove("ion-close-round");
             el.classList.add("ion-navicon-round");
             setMobileMenu(false);
+        }
+    }
+
+    const subMenuOnClick = (event)  => {
+        setSubMenu(!showSubMenu);
+        const el = (event.target as HTMLElement);
+        if(el.classList.contains("ion-chevron-down"))
+        {
+            el.classList.remove("ion-chevron-down");
+            el.classList.add("ion-chevron-up");
+        }
+        else if(el.classList.contains("ion-chevron-up"))
+        {
+            el.classList.remove("ion-chevron-up");
+            el.classList.add("ion-chevron-down");
+        }
+        if(el.classList.contains(Styles.subMenuDropDownTitle))
+        {
+            var targetElement = el.nextElementSibling;
+            if(targetElement.classList.contains("ion-chevron-down"))
+            {
+                targetElement.classList.remove("ion-chevron-down");
+                targetElement.classList.add("ion-chevron-up");
+            }
+            else if(targetElement.classList.contains("ion-chevron-up"))
+            {
+                targetElement.classList.remove("ion-chevron-up");
+                targetElement.classList.add("ion-chevron-down");
+            }
         }
     }
 
@@ -92,6 +122,21 @@ const Nav = () => {
                                 <div onClick={() => goTo('#')}>
                                     <div className = { [router.pathname === '/test' ? Styles.fixedMobileLink : Styles.normal].join(" ") }>Corso esperto</div>
                                 </div>
+                                <hr />
+                                <div>
+                                    <div className={ Styles.normal } onClick={ (e) => { subMenuOnClick(e) } }><span className={ Styles.subMenuDropDownTitle }>I Corsi</span><span className={Styles.iconChevron+" ion-chevron-down"}></span></div>
+                                    {
+                                        <div className={ [Styles.subMenu, showSubMenu ? Styles.showMobileSubMenu : ""].join(" ") }>
+                                            <div>Test</div>
+                                            <div>Test</div>  
+                                        </div>
+                                    }
+                                </div>
+                                <hr />
+                                <div onClick={() => goTo('#')}>
+                                    <div className = { [router.pathname === '/test' ? Styles.fixedMobileLink : Styles.normal].join(" ") }>Corso esperto</div>
+                                </div>
+                                <hr />
                             </div>
                         </div>
                 }    
