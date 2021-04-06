@@ -99,7 +99,7 @@ const Nav = () => {
                                 </ul> 
                             </div>
                             <div className={ Styles.showOnMinWidth } onClick = { (event) => {mobileMenuOnClick(event)} } >
-                                <i className="ion-navicon-round"></i>
+                                <i className="ion-navicon-round" style={ { verticalAlign: "text-bottom" } }></i>
                             </div>
                         </>
                     }
