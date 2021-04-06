@@ -1,6 +1,32 @@
 .newsContainer {
     margin-bottom: 15px;
+}
+
+.buttonContainer {
+    padding: 0 1% 1% 1%;
+}
+
+/*up to 800*/
+@media only screen and (max-width: 800px) {
+    .eventContainer { 
+      width: 50%;
+      margin: 0;
+      padding: 4%;
+    }
+
     .buttonContainer {
-        padding: 0 1% 0 1%;
+        padding: 4%;
+    }
+}
+// up to Ipad
+@media only screen and (max-width: 767px)
+{
+    .eventContainer { 
+        width: 100%;
+        padding: 5%;
+    }
+
+    .buttonContainer {
+        padding: 0 5% 5% 5%;
     }
 }
