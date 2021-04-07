@@ -1,11 +1,17 @@
 .infoAndContactsContainer {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/vendors/images/ws1.jpg);
-    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/vendors/images/ws1.jpg) center center no-repeat;
     color: #fff;
     background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
     z-index: -10; 
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: auto;
+    height: auto;
+    margin: 0;
     .infoTitle {
         color: #f90;
     }
