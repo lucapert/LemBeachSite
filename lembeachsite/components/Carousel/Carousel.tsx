@@ -11,7 +11,7 @@ const CarouselReactB = () => {
         <div className={ Styles.carouselContainer }>
             <Carousel fade pause={false}>
                 <Carousel.Item>
-                    <div style={ { backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url(/vendors/images/ws1.jpg)', height:
+                    <div style={ { backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url(/vendors/images/ws1.jpg)', height:
     '100vh', backgroundSize: 'cover', backgroundPosition: 'center'} }>
                         <div className="fadeInVertical">
                             <Carousel.Caption>
@@ -22,7 +22,7 @@ const CarouselReactB = () => {
                     </div>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <div style={ { backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url(/vendors/images/ws2.jpg)', height:
+                    <div style={ { backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url(/vendors/images/ws2.jpg)', height:
     '100vh', backgroundSize: 'cover', backgroundPosition: 'center' } }>
                         <div className="fadeInVertical">
                             <Carousel.Caption>
@@ -33,7 +33,7 @@ const CarouselReactB = () => {
                     </div>
                 </Carousel.Item>
                 <Carousel.Item>
-                    <div style={ { backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url(/vendors/images/ws3.jpg)", height:
+                    <div style={ { backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url(/vendors/images/ws3.jpg)", height:
     "100vh", backgroundSize: 'cover', backgroundPosition: 'center' } }>
                         <div className="fadeInVertical">
                             <Carousel.Caption>
