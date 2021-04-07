@@ -36,7 +36,8 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-color: #000;
-        background-position: bottom right;
+        background-position: center;
+        z-index: -1;
     }
     .infoTitle {
         color: #f90;
