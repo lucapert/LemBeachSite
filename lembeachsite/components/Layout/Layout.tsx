@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
             <main className={ styles.main }>
                 { children }
                 <Row styles="" backGroudColor="#007FFF" children={ <TextRow titleColor="#ffffff" title={ "resta in contatto con noi".toUpperCase() } article="" /> } />
-                <Row styles={ InfoAndContactsStyles.infoAndContactsContainer } backGroudColor="#1AA2B0" children={ <InfoAndContacts /> } />
+                <Row styles={ InfoAndContactsStyles.infoAndContactsContainer } backGroudColor="" children={ <InfoAndContacts /> } />
             </main>
             <Footer />
         </div>
