@@ -15,8 +15,8 @@ const CarouselReactB = () => {
     '100vh', backgroundSize: 'cover', backgroundPosition: 'center'} }>
                         <div className="fadeInVertical">
                             <Carousel.Caption>
-                                <h1>{ t.carouselTitle}</h1>
-                                <p>{ t.carouselSubTitle }.</p>
+                                <h1 className="fadeInTitle">{ t.carouselTitle}</h1>
+                                <p className="fadeInSubTitle">{ t.carouselSubTitle }.</p>
                             </Carousel.Caption>
                         </div>
                     </div>
@@ -26,8 +26,8 @@ const CarouselReactB = () => {
     '100vh', backgroundSize: 'cover', backgroundPosition: 'center' } }>
                         <div className="fadeInVertical">
                             <Carousel.Caption>
-                            <h1>Second slide label</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <h1 className="fadeInTitle">Second slide label</h1>
+                                <p className="fadeInSubTitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </Carousel.Caption>
                         </div>
                     </div>
@@ -37,8 +37,8 @@ const CarouselReactB = () => {
     "100vh", backgroundSize: 'cover', backgroundPosition: 'center' } }>
                         <div className="fadeInVertical">
                             <Carousel.Caption>
-                                <h1>Third slide label</h1>
-                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                <h1 className="fadeInTitle">Third slide label</h1>
+                                <p className="fadeInSubTitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </Carousel.Caption>
                         </div>
                     </div>

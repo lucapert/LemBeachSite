@@ -19,10 +19,7 @@
 
 html,
 body {
-  padding: 0;
-  margin: 0;
   font-family: Ubuntu, sans-serif;
-  height: 100%;
   font-size: 16px;
   text-rendering: optimizeLegibility;
 }
@@ -166,6 +163,35 @@ ol.carousel-indicators {
 @keyframes slide-down {
   to {
     transform:translateY(170px);
+  }
+}
+
+.fadeInTitle {
+  animation: 1s fadeInTitle 0.2s ease-in forwards;
+  -moz-animation: 1s fadeInTitle 0.2s ease-in forwards;
+  -webkit-animation: 1s fadeInTitle 0.2s ease-in forwards;
+  -o-animation: 1s fadeInTitle 0.2s ease-in forwards; 
+  opacity: 0;
+}
+
+@keyframes fadeInTitle {
+  to {
+    opacity: 1;;
+  }
+}
+
+.fadeInSubTitle
+{
+  animation: 1.4s fadeInTitle 1.2s ease-in forwards;
+  -moz-animation: 1.4s fadeInTitle 1.2s ease-in forwards;
+  -webkit-animation: 1.4s fadeInTitle 1.2s ease-in forwards;
+  -o-animation: 1.4s fadeInTitle 1.2s ease-in forwards;
+  opacity: 0; 
+}
+
+@keyframes fadeInSubTitle {
+  to {
+    opacity: 1;
   }
 }
 
