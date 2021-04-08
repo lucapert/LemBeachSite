@@ -5,18 +5,18 @@
     justify-content: center;
     align-items: center;
     color: #ffffff;
-    border-bottom: 1px solid #1AA2B0;
     .mainHeader_inner
     {
         display: flex;
         justify-content: space-between;
         color: #f7f7f7;
         position: relative;
+        border-bottom: 1px solid #f7f7f7;
         .infoIcon {
             vertical-align: sub;
         }
         .contacts {
-            padding: 5px 0;
+            padding: 4px 0 0 0;
             .contactsEmail {
                 margin-right: 20px;
                 margin-bottom: 2px;
@@ -32,7 +32,7 @@
         .localizationIco {
             display: flex;
             position: absolute;
-            right: 50%;
+            right: 45.5%;
             top: 50%;
             transform: translate(0, -50%);
             .flagIco {

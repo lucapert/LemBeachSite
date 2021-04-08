@@ -42,12 +42,12 @@ const Header = () => {
                                     facebook
                                 </span>
                             </a>
-                            <a href="https://www.twitter.it" className={Styles.social}>
+                            {/* <a href="https://www.twitter.it" className={Styles.social}>
                                 <span className={Styles.twitter+" ion-social-twitter-outline"}></span>
                             </a>
                             <a href="https://www.instagram.it" className={Styles.social}>
                                 <span className={Styles.instagram+" ion-social-instagram-outline"}></span>
-                            </a>
+                            </a> */}
                         </div>
                     </div>
                 </div>

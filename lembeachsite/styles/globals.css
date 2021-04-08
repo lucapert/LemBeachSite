@@ -22,7 +22,7 @@ body {
   font-family: Ubuntu, sans-serif;
   font-size: 16px;
   text-rendering: optimizeLegibility;
-
+  height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/vendors/images/ws1.jpg);
   background-size: cover;
   color: #fff;
@@ -176,7 +176,7 @@ ol.carousel-indicators {
 
 @keyframes slide-down {
   to {
-    transform:translateY(170px);
+    transform:translateY(120px);
   }
 }
 
