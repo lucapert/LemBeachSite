@@ -128,7 +128,6 @@ const Nav = () => {
                                 <div onClick={() => goTo('#')}>
                                     <div className = { [router.pathname === '/test' ? Styles.fixedMobileLink : Styles.normal].join(" ") }><i className={ Styles.subMenuIcon +" ion-android-sunny"}></i>Chi siamo</div>
                                 </div>
-                                <hr />
                             </div>
                         </div>
                 }    

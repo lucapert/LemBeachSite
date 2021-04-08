@@ -310,7 +310,7 @@ a#readMore:hover {
 
   @keyframes slide-down {
     to {
-      transform:translateY(110px);
+      transform:translateY(100px);
     }
   }
 }
