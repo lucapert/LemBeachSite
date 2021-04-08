@@ -18,6 +18,7 @@ const Layout = ({ children }) => {
                 { children }
                 <Row id="infoAndContactsText" styles="" backGroudColor="#007FFF" children={ <TextRow titleColor="#ffffff" title={ "resta in contatto con noi".toUpperCase() } article="" /> } />
                 <Row id="infoAndContacts" styles={ InfoAndContactsStyles.infoAndContactsContainer } backGroudColor="" children={ <InfoAndContacts /> } />
+                <Row id="last" styles="" backGroudColor="#324B4E" children={ null } ></Row>
             </main>
             <Footer />
         </div>
